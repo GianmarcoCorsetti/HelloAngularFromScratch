@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+
+body{
+	background-image: url(C:\Users\gianm\Desktop\Cartelle\Dev\Angular\Progetti\HelloAngular\src\assets\imagines\SchoolImage.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.titolo{
+	margin: auto;
+	margin-top: 10vh;
+	margin-bottom: 10vh;
+}
+.titolo h1.text-center{
+	width: 100%;
+	color: DARKGREEN;
+	font-size: 60;
+	padding: 20px;
+}
+.whiteTitle{
+	color:white;
+	margin: 10px;
+	padding-left: 5px;
+	padding-bottom: 5px;
+}
+
+.active{
+	font-weight: 500;
+}
