@@ -1,1 +1,35 @@
-<p>editions works!</p>
+<body>
+      <div>
+        <h1>Welcome to the Edition Corses Home Page</h1>
+        <p>this is a tiny list of the Editions available</p>
+      </div>
+      <div>
+        <table class="table table-dark table-striped table-hover" id="table"
+          style="width: 100%; user-select: none; -moz-user-select: none;">
+          <thead>
+            <tr>
+              <th scope="col">id</th>
+              <th scope="col">first name</th>
+              <th scope="col">last name</th>
+              <th scope="col">email</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let c of editions">
+              <td>{{ c.id }}</td>
+              <td>{{ c.code }}</td>
+              <td>{{ c.description }}</td>
+              <td>{{ c.realPrice }}</td>
+              <td style="text-align: right;">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-primary" [routerLink]="['/studentdetails', c.id]">Info</button>
+                  <button type="button" class="btn btn-success" [routerLink]="['/enrollmentstudent', c.id]">Enroll</button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </body>
+    
